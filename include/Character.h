@@ -6,11 +6,11 @@ class Character : public Datatype {
 public:
 	Character(string);
 	virtual ~Character();
-	Datatype* declare(Datatype*);
 
 protected:
 
 private:
+    char data;
 };
 
 #endif // CHARACTER_H

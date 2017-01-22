@@ -1,6 +1,7 @@
 #ifndef DATATYPE_H
 #define DATATYPE_H
 #include <iostream>
+#include "Logger.h"
 
 using namespace std;
 enum Type{
@@ -13,7 +14,9 @@ class Datatype
         Datatype(Type);
         virtual ~Datatype();
 
-        virtual Datatype* declare(Datatype*) = 0;
+        virtual Datatype* asign(Datatype*) = 0;
+
+        Type getType();
     protected:
         Type type;
     private:

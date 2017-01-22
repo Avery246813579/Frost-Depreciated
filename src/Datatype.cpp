@@ -9,3 +9,7 @@ Datatype::~Datatype()
 {
     //dtor
 }
+
+Type Datatype::getType(){
+    return Datatype::type;
+}
