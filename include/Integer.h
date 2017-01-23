@@ -1,16 +1,21 @@
 #ifndef INTEGER_H
 #define INTEGER_H
+#include "Datatype.h"
+#include "Logger.h"
 
+using namespace std;
+class Integer : public Datatype {
+public:
+	Integer(string);
+	virtual ~Integer();
+	int to_int(char const*);
+    Datatype* asign(Datatype*);
 
-class Integer
-{
-    public:
-        Integer();
-        virtual ~Integer();
+protected:
 
-    protected:
+private:
+	int data;
 
-    private:
 };
 
 #endif // INTEGER_H

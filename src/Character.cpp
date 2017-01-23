@@ -1,13 +1,12 @@
 #include "Character.h"
 
-Character::Character(string str):Datatype(NUMBER) {
+Character::Character(string str):Datatype(CHARACTER) {
 	if(str.size() > 1) {
 		Logger::error("CHARACTER.CPP", "CHARACTER INVALID");
 		return;
 	}
 
-	const char* c = str.c_str();
-    Character::data = *c;
+    Character::data = *str.c_str();
 }
 
 Character::~Character() {

@@ -11,9 +11,9 @@ Logger::~Logger()
 }
 
 void Logger::log(string location, string message){
-    cout << location << " INFO >> " << message;
+    cout << location << " INFO >> " << message << '\n';
 }
 
 void Logger::error(string location, string message){
-    cout << location << " ERROR >> " << message;
+    cout << location << " ERROR >> " << message << '\n';
 }
