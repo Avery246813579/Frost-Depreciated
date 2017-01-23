@@ -49,3 +49,14 @@ Frost.layout
 *.depend
 Frost.cbp
 *.cbp
+
+# Debug stuff
+obj
+Frost.cbp
+
+bin
+lib/obj
+lib/Frost.cbp
+lib/Frost.depend
+lib/Frost.layout
+lib/bin
